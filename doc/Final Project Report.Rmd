@@ -187,21 +187,16 @@ model.sel(lm9, lm10, lm11,null, lm12, rank = AIC)
 ```
 
 ```{r,warning=FALSE, echo=FALSE}
-kable(model.sel(lm9, lm10, lm11,null, lm12, rank = AIC))
+kable(model.sel(lm9, lm10, lm11,null, lm12, rank = AIC), caption = "Table 1: *AIC for models*")
 ```
 
-*Table 1: AIC for models*
-
-
 ```{r, include = FALSE}
-table <- kable(anova(lm9, lm10, lm11, lm12,null))
+table <- kable(anova(lm9, lm10, lm11, lm12,null), caption = "Table 2: *ANOVA for models*")
 ```
 
 ```{r, echo=FALSE}
 table
 ```
-
-*Table 2: ANOVA for models*
 
 As described above, under the chosen model, each combination of feeding behaviour and associated specific habitats influence the y-intercept and slope of the predator-prey mass interactions. In general, when we compare the three feeding behaviours, there seems to be a visible difference of the intercept, with the slope for piscivorous being the highest (Fig.5). On the other hand, despite the changes in the habitat and feeding behaviour, a majority of the results show a shallow slope for the predator-prey mass interaction, in relation to the general-trend line visualized by the black bar. Shallow slopes indicate relationships that are closer to a neutral effect, which may assume a loose correlation between predator-prey mass ratios (Fig.6). It is also interesting to note that comparing the variance of the interaction relationships, the broad-ration-feeders show the widest range compared to all of them. It incorporates both the lowest and highest value of slope, compared to the narrower ranges of slope data for the specialist-predators.
 
